@@ -1,0 +1,55 @@
+http://localhost:8081/flight/100
+http://localhost:8081/flight/flights
+
+POST:
+http://localhost:8081/flight/add
+{
+        "flightName": "AA",
+        "source": "DEL",
+        "destination": "MUM",
+        "ticketPrice": 100,
+        "noOfAvailableSeats": 90,
+        "fclass": "J",
+        "doj": "25AUG"
+}
+
+PUT:
+http://localhost:8081/flight/update
+{
+        "flightId":40,
+        "flightName": "AA",
+        "source": "LDX",
+        "destination": "MUM",
+        "ticketPrice": 150,
+        "noOfAvailableSeats": 90,
+        "fclass": "J",
+        "doj": "25AUG"
+}
+
+DELETE:
+http://localhost:8081/flight/del
+{
+        "flightId":40
+}
+
+
+createadmin:POST
+http://localhost:8765/flight/createaccount
+{
+     "userName": "super",
+    "password": "admin"
+}
+Add flight:
+http://localhost:8765/flight/add
+{
+    "flightName": "IN",
+    "source": "DEL",
+    "destination": "PUN",
+    "ticketPrice": 100,
+    "noOfAvailableSeats": 90,
+    "fclass": "Y",
+    "doj": "05SEP",
+    "userName": "super",
+    "password": "admin"
+}
+

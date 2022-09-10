@@ -1,0 +1,3 @@
+http://localhost:8765/ticket/flight/flights
+http://localhost:8765/ticket/ticket/43
+http://localhost:8765/ticket/tickets

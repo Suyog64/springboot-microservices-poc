@@ -1,0 +1,44 @@
+GET:
+http://localhost:8082/ticket/flight/flights
+http://localhost:8082/ticket/flight/34
+http://localhost:8082/ticket/tickets
+http://localhost:8082/ticket/43
+
+
+
+http://localhost:8082/ticket/cancel/43
+
+
+
+Create User:
+POST : http://localhost:8765/ticket/createaccount
+{
+       "userName": "abc12",
+       "password": "1211"
+}
+
+Add Ticket:
+POST:
+http://localhost:8765/ticket/addticket
+{
+        "flightId": 41,
+        "numOfPas": 1,
+        "doj": "25AUG",
+         "userName": "abc12",
+    	"password": "1211"
+}
+
+Cancel Ticket:POST id is flightId
+http://localhost:8765/ticket/cancel/
+{   
+    "id":48,
+    "userName": "abc12",
+    "password": "1211"
+}
+
+Get Flights:
+http://localhost:8765/ticket/flight/41
+http://localhost:8765/ticket/flight/flights
+
+Get Ticket by User:GET
+http://localhost:8765/ticket/ticketbyuser/abc12

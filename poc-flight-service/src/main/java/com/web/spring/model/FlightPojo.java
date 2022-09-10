@@ -1,0 +1,105 @@
+package com.web.spring.model;
+
+public class FlightPojo {
+	
+	
+	int flightId;
+	String flightName;
+	String source;
+	String destination;
+	String DOJ;
+	int NoOfAvailableSeats;
+	int ticketPrice;
+	String Fclass;
+	String userName;
+	String password;
+	public int getFlightId() {
+		return flightId;
+	}
+	public void setFlightId(int flightId) {
+		this.flightId = flightId;
+	}
+	public String getFlightName() {
+		return flightName;
+	}
+	public void setFlightName(String flightName) {
+		this.flightName = flightName;
+	}
+	public String getSource() {
+		return source;
+	}
+	public void setSource(String source) {
+		this.source = source;
+	}
+	public String getDestination() {
+		return destination;
+	}
+	public void setDestination(String destination) {
+		this.destination = destination;
+	}
+	public String getDOJ() {
+		return DOJ;
+	}
+	public void setDOJ(String dOJ) {
+		DOJ = dOJ;
+	}
+	public int getNoOfAvailableSeats() {
+		return NoOfAvailableSeats;
+	}
+	public void setNoOfAvailableSeats(int noOfAvailableSeats) {
+		NoOfAvailableSeats = noOfAvailableSeats;
+	}
+	public int getTicketPrice() {
+		return ticketPrice;
+	}
+	public void setTicketPrice(int ticketPrice) {
+		this.ticketPrice = ticketPrice;
+	}
+	public String getFclass() {
+		return Fclass;
+	}
+	public void setFclass(String fclass) {
+		Fclass = fclass;
+	}
+
+	public String getUserName() {
+		return userName;
+	}
+	public void setUserName(String userName) {
+		this.userName = userName;
+	}
+	public String getPassword() {
+		return password;
+	}
+	public void setPassword(String password) {
+		this.password = password;
+	}
+	public FlightPojo(int flightId, String flightName, String source, String destination, String dOJ,
+			int noOfAvailableSeats, int ticketPrice, String fclass, String userName, String password) {
+		super();
+		this.flightId = flightId;
+		this.flightName = flightName;
+		this.source = source;
+		this.destination = destination;
+		DOJ = dOJ;
+		NoOfAvailableSeats = noOfAvailableSeats;
+		this.ticketPrice = ticketPrice;
+		Fclass = fclass;
+		this.userName = userName;
+		this.password = password;
+	}
+	public FlightPojo() {
+		super();
+	}
+	@Override
+	public String toString() {
+		return "FlightPojo [flightId=" + flightId + ", flightName=" + flightName + ", source=" + source
+				+ ", destination=" + destination + ", DOJ=" + DOJ + ", NoOfAvailableSeats=" + NoOfAvailableSeats
+				+ ", ticketPrice=" + ticketPrice + ", Fclass=" + Fclass + ", userName=" + userName + ", password="
+				+ password + "]";
+	}
+
+
+	
+	
+}

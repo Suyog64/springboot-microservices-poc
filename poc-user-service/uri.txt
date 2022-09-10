@@ -1,0 +1,15 @@
+GET:
+http://localhost:8082/ticket/flight/flights
+http://localhost:8082/ticket/flight/34
+http://localhost:8082/ticket/tickets
+http://localhost:8082/ticket/43
+
+POST:
+http://localhost:8082/ticket/addticket
+{
+        "flightId": 41,
+        "numOfPas": 1,
+        "doj": "25AUG"
+}
+
+http://localhost:8082/ticket/cancel/43
